@@ -64,9 +64,6 @@ npm install
 npm run dev
 
 Project Structure
-csharp
-Copy
-Edit
 ├── app/
 │   ├── components/       # Reusable UI components
 │   ├── routes/           # Remix route files
@@ -78,6 +75,8 @@ Edit
 ├── README.md
 ├── package.json
 └── tailwind.config.js
+
+
 
 #Deployment
 The project is deployed using Vercel. On every push to main, changes are automatically deployed.
