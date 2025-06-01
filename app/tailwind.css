@@ -2,11 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+/* 🔹 Custom Pastel Colors */
+@layer utilities {
+  .hover-bg-pastel {
+    @apply hover:bg-pastelPurple transition-all duration-200;
+  }
+}
 
+/* 🔹 Apply Custom Colors Globally */
+html {
+  @apply bg-pastelBlue text-pastelDark;
+}
+
+html.dark {
+  @apply bg-pastelPurple text-white;
+}
+
+/* 🔹 Body Styles & Dark Mode */
+body {
+  @apply bg-pastelBlue dark:bg-pastelPurple text-pastelDark dark:text-white;
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
 }
+
+/* 🔹 Form Container */
+.form-container {
+  @apply p-6 rounded-lg shadow-xl bg-pastelGreen border border-pastelBorder;
+}
+
+/* 🔹 Buttons */
+.btn-primary {
+  @apply px-4 py-2 rounded bg-pastelPink text-gray-900 hover:bg-pastelBorder;
+}
+
+.btn-secondary {
+  @apply px-3 py-1 rounded bg-pastelYellow text-gray-900 hover:bg-pastelBorder;
+}
+
+/* 🔹 Input Fields */
+.input-field {
+  @apply border border-pastelBorder p-2 rounded w-full bg-pastelYellow text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-[#C3B1E1];
+}
+
+
