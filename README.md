@@ -48,7 +48,7 @@ Bonus Features:
 | **Tailwind CSS** | Utility-first CSS framework for styling |
 | **Zustand**      | Simple, scalable state management |
 | **LocalStorage** | Used for saving forms locally and generating shareable links |
-| **TypeScript**   | (If used) Ensures strong typing and safer code |
+| **TypeScript**   |  Ensures strong typing and safer code |
 
 ##  Setup Instructions
 
